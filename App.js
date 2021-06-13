@@ -44,57 +44,7 @@ function ProfileScreen() {
   );
 }
 
-const HomeTab = createBottomTabNavigator(//{  
-  //   Discover:{  
-  //     screen:DiscoverScreen,  
-  //     navigationOptions:{  
-  //       tabBarLabel:'Discover',  
-  //       tabBarIcon:({tintColor})=>(  
-  //           <Icon name="ios-home" color={tintColor} size={25}/>  
-  //       )  
-  //     }  
-  //   },  
-  //   MyCourses: {  
-  //     screen:MyCoursesScreen,  
-  //     navigationOptions:{  
-  //       tabBarLabel:'My Courses',  
-  //       tabBarIcon:({tintColor})=>(  
-  //           <Icon name="ios-person" color={tintColor} size={25}/>  
-  //       )  
-  //     }  
-  //   },
-  //   Messages:{  
-  //     screen:MessagesScreen,  
-  //     navigationOptions:{  
-  //       tabBarLabel:'Messages',  
-  //       tabBarIcon:({tintColor})=>(  
-  //           <Icon name="ios-home" color={tintColor} size={25}/>  
-  //       )  
-  //     }  
-  //   },  
-  //   Notifications: {  
-  //     screen:NotificationsScreen,  
-  //     navigationOptions:{  
-  //       tabBarLabel:'Notifications',  
-  //       tabBarIcon:({tintColor})=>(  
-  //           <Icon name="ios-person" color={tintColor} size={25}/>  
-  //       )  
-  //     }  
-  //   },
-  //   Profile: {  
-  //     screen:ProfileScreen,  
-  //     navigationOptions:{  
-  //       tabBarLabel:'Profile',  
-  //       tabBarIcon:({tintColor})=>(  
-  //           <Icon name="ios-person" color={tintColor} size={25}/>  
-  //       )  
-  //     }  
-  //   },
-  // },  
-  // {  
-  //   initialRouteName: "Discover"  
-  // } 
-);
+const HomeTab = createBottomTabNavigator();
 
 export default function App() {
   return (
