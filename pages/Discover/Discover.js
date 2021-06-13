@@ -1,10 +1,11 @@
 import React from "react";
 import { StyleSheet, Text, View } from "react-native";
+import CrCards from "../../components/CrCards/CrCards";
 
 export default function Discover() {
   return (
     <View style={styles.container}>
-      <Text>Discover Screen !</Text>
+      <CrCards/>
     </View>
   );
 }
