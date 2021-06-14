@@ -3,8 +3,8 @@ import { StyleSheet, Text, View, Image } from "react-native";
 
 const cardsData = [
   {id:'1' ,imgUrl: require("../../assets/images/fitness.jpg"), title: "Fitness" },
-  {id:'2' ,imgUrl: require("../../assets/images/cooking.jpg"), title: "Learning" },
-  {id:'3' ,imgUrl: require("../../assets/images/learn-english.jpg"), title: "Cooking" },
+  {id:'2' ,imgUrl: require("../../assets/images/learn-english.jpg"), title: "Learning" },
+  {id:'3' ,imgUrl: require("../../assets/images/cooking.jpg"), title: "Cooking" },
 ];
 
 export default function CrCards() {
