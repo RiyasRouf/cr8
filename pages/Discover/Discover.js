@@ -11,6 +11,7 @@ export default function Discover() {
       <CrCards/>
       <SubTitle title="Suitable for you" />
       <HscrollView/>
+      
     </View>
   );
 }
