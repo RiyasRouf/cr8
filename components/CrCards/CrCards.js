@@ -2,9 +2,21 @@ import React from "react";
 import { StyleSheet, Text, View, Image } from "react-native";
 
 const cardsData = [
-  {id:'1' ,imgUrl: require("../../assets/images/fitness.jpg"), title: "Fitness" },
-  {id:'2' ,imgUrl: require("../../assets/images/learn-english.jpg"), title: "Learning" },
-  {id:'3' ,imgUrl: require("../../assets/images/cooking.jpg"), title: "Cooking" },
+  {
+    id: "1",
+    imgUrl: require("../../assets/images/fitness.jpg"),
+    title: "Fitness",
+  },
+  {
+    id: "2",
+    imgUrl: require("../../assets/images/learn-english.jpg"),
+    title: "Learning",
+  },
+  {
+    id: "3",
+    imgUrl: require("../../assets/images/cooking.jpg"),
+    title: "Cooking",
+  },
 ];
 
 export default function CrCards() {
@@ -18,7 +30,6 @@ export default function CrCards() {
     >
       {cardsData.map((item) => {
         return (
-          
           <View key={item.id}>
             <Image
               source={item.imgUrl}
@@ -28,7 +39,14 @@ export default function CrCards() {
                 borderRadius: 10,
               }}
             />
-            <Text style={{ position: "absolute", bottom: 10, left: 10,color:"#fff" }}>
+            <Text
+              style={{
+                position: "absolute",
+                bottom: 10,
+                left: 10,
+                color: "#fff",
+              }}
+            >
               {item.title}
             </Text>
           </View>
