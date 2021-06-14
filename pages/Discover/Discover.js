@@ -9,6 +9,7 @@ export default function Discover() {
       <SubTitle title="Categories" />
       <CrCards/>
       <SubTitle title="Suitable for you" />
+      <CrCards isWide="hi"/>
     </View>
   );
 }
