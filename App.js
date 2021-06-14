@@ -20,18 +20,18 @@ export default function App() {
             let iconName;
 
             if (route.name === 'Discover') {
-              iconName = focused ? require('./assets/images/heart.png') : require('./assets/images/lens.png');
+              iconName = focused ? require('./assets/images/discover.png') : require('./assets/images/discover.png');
             } else if (route.name === 'MyCourses') {
-              iconName = focused ? require('./assets/images/heart.png') : require('./assets/favicon.png');
+              iconName = focused ? require('./assets/images/lens.png') : require('./assets/images/mycourses.png');
             }
             else if (route.name === 'Messages') {
-              iconName = focused ? require('./assets/images/heart.png') : require('./assets/favicon.png');
+              iconName = focused ? require('./assets/images/lens.png') : require('./assets/images/messages.png');
             }
             else if (route.name === 'Notifications') {
-              iconName = focused ? require('./assets/images/heart.png') : require('./assets/favicon.png');
+              iconName = focused ? require('./assets/images/lens.png') : require('./assets/images/notification.png');
             }
             else if (route.name === 'Profile') {
-              iconName = focused ? require('./assets/images/heart.png') : require('./assets/favicon.png');
+              iconName = focused ? require('./assets/images/lens.png') : require('./assets/images/profile.png');
             }
             // You can return any component that you like here!
             
