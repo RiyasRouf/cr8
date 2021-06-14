@@ -28,7 +28,7 @@ export default function CrCards() {
                 borderRadius: 10,
               }}
             />
-            <Text style={{ position: "absolute", bottom: 10, left: 10 }}>
+            <Text style={{ position: "absolute", bottom: 10, left: 10,color:"#fff" }}>
               {item.title}
             </Text>
           </View>
