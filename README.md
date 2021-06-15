@@ -1,7 +1,7 @@
 # cr8
 
-##git clone https://github.com/RiyasRouf/cr8.git
+git clone https://github.com/RiyasRouf/cr8.git
 
-```yarn install
+```yarn install```
 
-```yarn start
+```yarn start```
