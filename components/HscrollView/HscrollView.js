@@ -6,19 +6,19 @@ export default function HscrollView() {
     names: [
       {
         id: "1",
-        imgUrl: require("../../assets/images/st-george-flag-std_2.jpg"),
+        imgUrl: require("../../App/assets/images/st-george-flag-std_2.jpg"),
         description: "3000 Most Popular English Vocabulary",
         title: "Mrs. Andora Lion",
       },
       {
         id: "2",
-        imgUrl: require("../../assets/images/learn-english.jpg"),
+        imgUrl: require("../../App/assets/images/learn-english.jpg"),
         description: "3000 Most Popular English Vocabulary",
         title: "Mrs. Andora Lion",
       },
       {
         id: "3",
-        imgUrl: require("../../assets/images/cooking.jpg"),
+        imgUrl: require("../../App/assets/images/cooking.jpg"),
         description: "3000 Most Popular English Vocabulary",
         title: "Mrs. Andora Lion",
       },

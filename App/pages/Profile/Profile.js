@@ -1,10 +1,10 @@
 import React from "react";
 import { StyleSheet, Text, View } from "react-native";
 
-export default function Notification() {
+export default function Profile() {
   return (
     <View style={styles.container}>
-      <Text>NotificationsScreen !</Text>
+      <Text>ProfileScreen Screen !</Text>
     </View>
   );
 }

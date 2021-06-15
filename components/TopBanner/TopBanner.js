@@ -15,19 +15,19 @@ const TopBanner = () => {
   const data = [
     {
       id: "1",
-      imgUrl: require("../../assets/images/Ballet-Dance-201806-001.jpg"),
+      imgUrl: require("../../App/assets/images/Ballet-Dance-201806-001.jpg"),
       text: "Basic Ballet Course",
       description: "test description for the item",
     },
     {
       id: "2",
-      imgUrl: require("../../assets/images/Ballet-5672.jpg"),
+      imgUrl: require("../../App/assets/images/Ballet-5672.jpg"),
       text: "Basic Ballet Course",
       description: "test description for the item",
     },
     {
       id: "3",
-      imgUrl: require("../../assets/images/Ballet-14325.jpg"),
+      imgUrl: require("../../App/assets/images/Ballet-14325.jpg"),
       text: "Basic Ballet Course",
       description: "test description for the item",
     },
