@@ -10,7 +10,7 @@ import {
 import { SwiperFlatList } from "react-native-swiper-flatlist";
 
 const TopBanner = () => {
-  const [text, onChangeText] = React.useState("Useless Text");
+  const [text, onChangeText] = React.useState("Search...");
 
   const data = [
     {
@@ -35,13 +35,13 @@ const TopBanner = () => {
 
   return (
     <View style={styles.container}>
-      <View style={styles.searchInput}>
-        <TextInput
+       <View style={styles.searchInput}>
+       <TextInput
           style={styles.input}
           onChangeText={onChangeText}
           value={text}
         />
-      </View>
+       </View>
       <SwiperFlatList
         autoplay
         autoplayLoop
@@ -76,11 +76,24 @@ const { width } = Dimensions.get("window");
 
 const styles = StyleSheet.create({
   searchInput: {
-  },
-  input: {
     height: 40,
     borderWidth: 1,
-    borderColor:"#fff"
+    marginTop:50,
+    marginLeft:20,
+    backgroundColor:"transparent",
+    color:"#fff",
+    zIndex:9999,
+    width:"80%",
+    position: "absolute",
+    borderWidth:0
+  },
+  input:{
+    backgroundColor:"#222B458C",
+    color:"#8F9BB3",
+    height:50,
+    borderWidth:0,
+    borderRadius:10,
+    padding:10
   },
   container: {
     flex: 1,
@@ -89,9 +102,9 @@ const styles = StyleSheet.create({
   swiper: {},
   child: {
     width,
-    minHeight: 436,
-    justifyContent: "space-between",
+    minHeight: 536,
     padding: 10,
+    justifyContent: "flex-end",
   },
   subtext: {
     color: "#fff",
@@ -110,5 +123,6 @@ const styles = StyleSheet.create({
     borderBottomRightRadius: 20,
     overflow: "hidden",
     resizeMode: "stretch",
+    justifyContent: "space-between",
   },
 });
