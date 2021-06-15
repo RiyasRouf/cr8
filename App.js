@@ -9,7 +9,10 @@ import Discover from "./App/pages/Discover/Discover";
 import MyCourses from "./App/pages/MyCourses/MyCourses";
 import Messages from "./App/pages/Messages/Messages";
 
+// import { createStackNavigator } from '@react-navigation/stack';
+
 var HomeTab = createBottomTabNavigator();
+// const Stack = createStackNavigator();
 
 export default function App() {
   return (
