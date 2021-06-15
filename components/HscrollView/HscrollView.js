@@ -7,20 +7,20 @@ export default function HscrollView() {
       {
         id: "1",
         imgUrl: require("../../assets/images/st-george-flag-std_2.jpg"),
-        title: "Fitness",
         description: "3000 Most Popular English Vocabulary",
+        title: "Mrs. Andora Lion",
       },
       {
         id: "2",
         imgUrl: require("../../assets/images/learn-english.jpg"),
-        title: "Learning",
-        description: "test description for the item",
+        description: "3000 Most Popular English Vocabulary",
+        title: "Mrs. Andora Lion",
       },
       {
         id: "3",
         imgUrl: require("../../assets/images/cooking.jpg"),
-        title: "Cooking",
-        description: "test description for the item",
+        description: "3000 Most Popular English Vocabulary",
+        title: "Mrs. Andora Lion",
       },
     ],
   };
@@ -28,11 +28,11 @@ export default function HscrollView() {
     <View style={styles.container}>
       <ScrollView horizontal>
         {datas.names.map((item, index) => (
-          <View key={item.id} style={styles.item}>
+          <View key={index} style={styles.item}>
             <Image source={item.imgUrl} style={styles.image} />
-            <View>
-              <Text> {item.description} </Text>
-              <Text> {item.title} </Text>
+            <View style={styles.copy}>
+              <Text style={styles.desc}> {item.description} </Text>
+              <Text style={styles.title}> {item.title} </Text>
             </View>
           </View>
         ))}
@@ -43,28 +43,37 @@ export default function HscrollView() {
 
 const styles = StyleSheet.create({
   item: {
-    width: 400,
+    width: 350,
     flexDirection: "row",
-    alignItems: "center",
-    margin: 10,
+    padding: 10,
     borderColor: "#F4F4F4",
     borderWidth: 1,
     borderRadius: 10,
     backgroundColor: "#F4F4F4",
+    marginRight: 10,
+  },
+  copy: {
+    flex: 1,
+    justifyContent: "center",
   },
   container: {
-    height: 180,
+    height: 130,
     borderRadius: 10,
+    margin: 10,
   },
   image: {
-    margin: 15,
-    height: 130,
+    height: "100%",
     width: 120,
     borderRadius: 10,
+    marginRight: 10,
   },
+  desc: {
+    color: "#222B45",
+    fontSize:15,
+    fontWeight:"600"
+  },
+  title: {},
   text: {
     flexDirection: "column",
-    //    justifyContent: 'space-between',
-    //    alignItems: 'center',
   },
 });
